@@ -1,0 +1,38 @@
+{
+  "name": "packagejson2npmcmd",
+  "version": "1.0.1",
+  "description": "package.json to npm install command",
+  "bin": {
+    "packagejson2npmcmd": "index.js"
+  },
+  "scripts": {
+    "xo": "xo ; exit 0;",
+    "xo:fix": "xo --fix; exit 0;"
+  },
+  "preferGlobal": true,
+  "keywords": [
+    "npm"
+  ],
+  "private": false,
+  "devDependencies": {
+    "xo": "^0.17.1"
+  },
+  "author": "ichiwa",
+  "license": "MIT",
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "no-unused-vars": 0,
+      "no-negated-condition": 1,
+      "camelcase": 1
+    }
+  },
+  "dependencies": {
+    "command-line-args": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ichiwa/packagejson2npmcmd.git"
+  }  
+}
